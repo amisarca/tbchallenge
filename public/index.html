@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title>Guestbook</title>
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+  <script type="text/javascript" src="public/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="public/js/handlebars-v2.0.0.js"></script>
+  <script type="text/javascript" src="public/js/director.min.js"></script>
+  <script type="text/javascript" src="public/js/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <li class="ad"><a href="#" role="button">List your space</a></li>
+      </ul>
+      <h3 class="text-muted"><img src="public/images/Guesthouse-logo.png" /></h3>
+    </div>
+  </div>
+
+  <div id="carousel-image">
+    <img src="public/images/Carousel.png" />
+    <h1>Login</h1>
+  </div>
+
+  <div id="content">
+    <div class="container">
+      <div class="col-sm-offset-3 col-sm-6">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="center">
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer"><p>&copy; Guestbook, Inc</p></div>
+  </div>
+  <script id="login-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <h1>{{title}}</h1>
+      <div class="body">
+        {{body}}
+      </div>
+    </div>
+  </script>
+</body>
+</html>

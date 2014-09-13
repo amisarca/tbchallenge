@@ -1,0 +1,35 @@
+.nav-pills>li.ad>a, .nav-pills>li.ad>a:hover, .nav-pills>li.ad>a:focus {
+  color: #fff;
+  background-color: #ecd203;
+}
+
+#carousel-image>img {
+  position: relative;
+}
+
+#carousel-image h1 {
+  left: 0;
+    position:absolute;
+    text-align:center;
+    top: 160px;
+    width: 100%;
+  color: white;
+}
+
+#content {
+  padding-top: 20px;
+  background: #f3f3f3;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 109px;
+  text-align: center;;
+  color: #777;
+  padding-right: 15px;
+  padding-left: 15px;
+}
